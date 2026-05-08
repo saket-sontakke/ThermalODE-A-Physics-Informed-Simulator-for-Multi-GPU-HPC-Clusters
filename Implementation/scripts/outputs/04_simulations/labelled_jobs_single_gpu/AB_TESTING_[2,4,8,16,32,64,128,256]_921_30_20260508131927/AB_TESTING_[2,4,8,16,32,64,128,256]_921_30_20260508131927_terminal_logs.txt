@@ -1,0 +1,141 @@
+
+[*] Scanning directory: C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\data\mit-supercloud-dataset\labelled_jobs_single_gpu_csv
+
+[*] Found binary trace cache! Loading metadata...
+[*] Loaded 921 jobs demanding 921 GPUs from cache.
+[*] Traces located at: C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\data\mit-supercloud-dataset\labelled_jobs_single_gpu_csv\_npy_cache
+
+[*] PRELOAD_TO_RAM explicitly enabled. Initializing traces to system memory...
+Caching Binary Traces: 100%|######################################################################| 921/921 [00:18<00:00, 50.51it/s]
+
+[*] Memory ingest complete: 1842 vector structures retained.
+
+======================================================================
+--- ThermalODE SIMULATOR INITIALIZATION ---
+======================================================================
+
+[*] DIRECTORY PATHS:
+    - INPUT DIRECTORY : 
+        C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\data\mit-supercloud-dataset\labelled_jobs_single_gpu_csv
+    - OUTPUT DIRECTORY: 
+        C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\scripts\outputs\04_simulations\labelled_jobs_single_gpu\AB_TESTING_[2,4,8,16,32,64,128,256]_921_30_20260508131927
+
+[*] SYSTEM CONFIGURATION:
+    - MODE                      : AB_TESTING
+    - NODE(S) TO SIMULATE       : [2, 4, 8, 16, 32, 64, 128, 256]
+    - AMBIENT TEMP              : 30 °C
+    - COOLING EFFICIENCY        : 100%
+    - NUM CORES                 : Auto (All)
+    - PRELOAD TO RAM            : True
+    - EXPORT GRANULAR TELEMETRY : False
+    - HIGH RES TELEMETRY        : False
+    - THEME                     : light
+
+[*] DERIVED PHYSICS PARAMETERS:
+    - h_base_0                  : 3.97913
+    - h_active_0                : 20.91140
+    - h_base_1                  : 4.76174
+    - h_active_1                : 19.81780
+======================================================================
+
+[*] Initializing JIT Compilation sequence parameters...
+
+============================================================
+[*] EXECUTING SIMULATION ROUTINE: 2 NODES
+============================================================
+[STANDARD] Simulating: 100%|#########| 921/921 [19:38<00:00,  1.28s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+[THERMAL_AWARE] Simulating: 100%|####| 921/921 [22:38<00:00,  1.48s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+
+[*] Execution cycle complete. Saving ZIP...
+
+[SUCCESS] ZIP archive saved at: C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\scripts\outputs\04_simulations\labelled_jobs_single_gpu\AB_TESTING_[2,4,8,16,32,64,128,256]_921_30_20260508131927\AB_TESTING_2_921_30_20260508131927.zip
+[METADATA] Hardware Compute Duration for 2 Nodes: 2537.70 seconds.
+
+
+============================================================
+[*] EXECUTING SIMULATION ROUTINE: 4 NODES
+============================================================
+[STANDARD] Simulating: 100%|#########| 921/921 [14:41<00:00,  1.04job/s, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+[THERMAL_AWARE] Simulating: 100%|####| 921/921 [19:20<00:00,  1.26s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+
+[*] Execution cycle complete. Saving ZIP...
+
+[SUCCESS] ZIP archive saved at: C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\scripts\outputs\04_simulations\labelled_jobs_single_gpu\AB_TESTING_[2,4,8,16,32,64,128,256]_921_30_20260508131927\AB_TESTING_4_921_30_20260508131927.zip
+[METADATA] Hardware Compute Duration for 4 Nodes: 2041.87 seconds.
+
+
+============================================================
+[*] EXECUTING SIMULATION ROUTINE: 8 NODES
+============================================================
+[STANDARD] Simulating: 100%|#########| 921/921 [18:55<00:00,  1.23s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+[THERMAL_AWARE] Simulating: 100%|####| 921/921 [21:38<00:00,  1.41s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+
+[*] Execution cycle complete. Saving ZIP...
+
+[SUCCESS] ZIP archive saved at: C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\scripts\outputs\04_simulations\labelled_jobs_single_gpu\AB_TESTING_[2,4,8,16,32,64,128,256]_921_30_20260508131927\AB_TESTING_8_921_30_20260508131927.zip
+[METADATA] Hardware Compute Duration for 8 Nodes: 2434.48 seconds.
+
+
+============================================================
+[*] EXECUTING SIMULATION ROUTINE: 16 NODES
+============================================================
+[STANDARD] Simulating: 100%|#########| 921/921 [18:17<00:00,  1.19s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+[THERMAL_AWARE] Simulating: 100%|####| 921/921 [17:57<00:00,  1.17s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+
+[*] Execution cycle complete. Saving ZIP...
+
+[SUCCESS] ZIP archive saved at: C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\scripts\outputs\04_simulations\labelled_jobs_single_gpu\AB_TESTING_[2,4,8,16,32,64,128,256]_921_30_20260508131927\AB_TESTING_16_921_30_20260508131927.zip
+[METADATA] Hardware Compute Duration for 16 Nodes: 2175.95 seconds.
+
+
+============================================================
+[*] EXECUTING SIMULATION ROUTINE: 32 NODES
+============================================================
+[STANDARD] Simulating: 100%|#########| 921/921 [18:36<00:00,  1.21s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+[THERMAL_AWARE] Simulating: 100%|####| 921/921 [17:50<00:00,  1.16s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+
+[*] Execution cycle complete. Saving ZIP...
+
+[SUCCESS] ZIP archive saved at: C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\scripts\outputs\04_simulations\labelled_jobs_single_gpu\AB_TESTING_[2,4,8,16,32,64,128,256]_921_30_20260508131927\AB_TESTING_32_921_30_20260508131927.zip
+[METADATA] Hardware Compute Duration for 32 Nodes: 2187.90 seconds.
+
+
+============================================================
+[*] EXECUTING SIMULATION ROUTINE: 64 NODES
+============================================================
+[STANDARD] Simulating: 100%|#########| 921/921 [17:56<00:00,  1.17s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+[THERMAL_AWARE] Simulating: 100%|####| 921/921 [18:39<00:00,  1.22s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+
+[*] Execution cycle complete. Saving ZIP...
+
+[SUCCESS] ZIP archive saved at: C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\scripts\outputs\04_simulations\labelled_jobs_single_gpu\AB_TESTING_[2,4,8,16,32,64,128,256]_921_30_20260508131927\AB_TESTING_64_921_30_20260508131927.zip
+[METADATA] Hardware Compute Duration for 64 Nodes: 2196.34 seconds.
+
+
+============================================================
+[*] EXECUTING SIMULATION ROUTINE: 128 NODES
+============================================================
+[STANDARD] Simulating: 100%|#########| 921/921 [24:22<00:00,  1.59s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+[THERMAL_AWARE] Simulating: 100%|####| 921/921 [20:25<00:00,  1.33s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+
+[*] Execution cycle complete. Saving ZIP...
+
+[SUCCESS] ZIP archive saved at: C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\scripts\outputs\04_simulations\labelled_jobs_single_gpu\AB_TESTING_[2,4,8,16,32,64,128,256]_921_30_20260508131927\AB_TESTING_128_921_30_20260508131927.zip
+[METADATA] Hardware Compute Duration for 128 Nodes: 2688.19 seconds.
+
+
+============================================================
+[*] EXECUTING SIMULATION ROUTINE: 256 NODES
+============================================================
+[STANDARD] Simulating: 100%|#########| 921/921 [22:22<00:00,  1.46s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+[THERMAL_AWARE] Simulating: 100%|####| 921/921 [20:16<00:00,  1.32s/job, Submitted=921, Queued=0, Active=0, Completed=921, Failed=0]
+
+[*] Execution cycle complete. Saving ZIP...
+
+[SUCCESS] ZIP archive saved at: C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\scripts\outputs\04_simulations\labelled_jobs_single_gpu\AB_TESTING_[2,4,8,16,32,64,128,256]_921_30_20260508131927\AB_TESTING_256_921_30_20260508131927.zip
+[METADATA] Hardware Compute Duration for 256 Nodes: 2558.91 seconds.
+
+
+[*] Generating Overall Comparative CSV Matrix...
+[SUCCESS] Comparative matrix saved at: C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\scripts\outputs\04_simulations\labelled_jobs_single_gpu\AB_TESTING_[2,4,8,16,32,64,128,256]_921_30_20260508131927\Comparative_Summary_Matrix_20260508131927.csv
+

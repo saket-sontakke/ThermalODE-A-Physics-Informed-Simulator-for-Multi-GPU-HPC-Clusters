@@ -132,7 +132,9 @@ export default function TrainingView({ theme, onToggleTheme, onGoHome }: Trainin
     "h_active_0": 20.911367416381836,
     "h_active_1": 19.817806243896484,
     "T_thresh_0": 70.25069427490234,
-    "T_thresh_1": 67.51343536376953
+    "T_thresh_1": 67.51343536376953,
+    "beta_0": 1.6688096523284912,
+    "beta_1": 1.3350908756256104
 }`;
 
   const initialParamsString = `{

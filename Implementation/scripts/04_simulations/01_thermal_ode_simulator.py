@@ -43,7 +43,7 @@ class Config:
     # List of integers. Defines the number of nodes to simulate. 
     # Provide a single value (e.g., [16]) or multiple for batch runs (e.g., [64, 128, 256]).
     NODES = [2, 4, 8, 16, 32, 64, 128, 256] 
-    
+
     # Integer. Ambient starting temperature of the datacenter (Celsius).
     # Valid range: 20 to 45.
     AMBIENT_TEMP_C = 30 
@@ -65,10 +65,10 @@ class Config:
     # --- Directory Paths ---
     
     # String. Absolute path pointing to your input dataset (CSV or Parquet files).
-    INPUT_DIR = r'C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\data\mit-supercloud-dataset\labelled_jobs_single_gpu_csv_categorized\resnet50' 
+    INPUT_DIR = r'C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\data\mit-supercloud-dataset\labelled_jobs_single_gpu_csv' 
     
     # String. Absolute path where simulation result folder will be saved.
-    OUTPUT_DIR = r'C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\scripts\outputs\04_simulations\trials\resnet50'
+    OUTPUT_DIR = r'C:\Users\Saket Sontakke\Documents\PROJECTS\Capstone\Implementation\scripts\outputs\04_simulations\labelled_jobs_single_gpu'
     
     # --- Performance & Telemetry Settings ---
     

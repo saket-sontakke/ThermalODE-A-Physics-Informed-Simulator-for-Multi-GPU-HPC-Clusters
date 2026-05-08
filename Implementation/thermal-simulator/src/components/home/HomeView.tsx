@@ -36,7 +36,7 @@ export default function HomeView({ theme, onToggleTheme, onNavigate }: HomeViewP
   };
 
   const handleCopyClone = () => {
-    navigator.clipboard.writeText("git clone https://github.com/saket-sontakke/HPC-Simulator-and-Thermal-Aware-Workload-Scheduler.git");
+    navigator.clipboard.writeText("git clone https://github.com/saket-sontakke/ThermalODE-A-Physics-Informed-Simulator-for-Multi-GPU-HPC-Clusters.git");
     setCloneCopied(true);
     setTimeout(() => setCloneCopied(false), 2000);
   };
@@ -71,17 +71,40 @@ export default function HomeView({ theme, onToggleTheme, onNavigate }: HomeViewP
           </p>
 
           {/* Option 1: Standalone Script */}
-          <div className="bg-gray-50 dark:bg-slate-800/50 p-3 rounded-xl border border-gray-200 dark:border-slate-700">
-            <h4 className="font-semibold text-gray-900 dark:text-white flex items-center gap-2 mb-2">
-              <Download className="w-4 h-4 text-blue-600 dark:text-blue-400" /> Standalone Script
+          <div className="bg-gray-50 dark:bg-slate-800/50 p-4 rounded-xl border border-gray-200 dark:border-slate-700">
+            <h4 className="font-semibold text-gray-900 dark:text-white flex items-center gap-2 mb-3">
+              <Download className="w-4 h-4 text-blue-600 dark:text-blue-400" /> 
+              Standalone Script
             </h4>
-            <a 
-              href="/01_thermal_ode_simulator.py" 
-              download 
-              className="text-sm text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 font-mono"
-            >
-              01_thermal_ode_simulator.py
-            </a>
+
+            <div className="flex flex-col gap-2 mb-4">
+              <a 
+                href="/01_thermal_ode_simulator.py" 
+                download 
+                className="group flex items-center justify-between p-2 rounded-lg bg-white dark:bg-slate-900 border border-gray-100 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-500 transition-colors"
+              >
+                <span className="text-sm font-mono text-gray-700 dark:text-slate-300">01_thermal_ode_simulator.py</span>
+                <ExternalLink className="w-3 h-3 text-gray-400 group-hover:text-blue-500" />
+              </a>
+
+              <a 
+                href="/requirements.txt" 
+                download 
+                className="group flex items-center justify-between p-2 rounded-lg bg-white dark:bg-slate-900 border border-gray-100 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-500 transition-colors"
+              >
+                <span className="text-sm font-mono text-gray-700 dark:text-slate-300">requirements.txt</span>
+                <ExternalLink className="w-3 h-3 text-gray-400 group-hover:text-blue-500" />
+              </a>
+            </div>
+
+            <div className="bg-blue-50/50 dark:bg-blue-900/20 p-2.5 rounded-lg border border-blue-100 dark:border-blue-800/30">
+              <p className="text-[11px] uppercase tracking-wider font-bold text-blue-600 dark:text-blue-400 mb-1 flex items-center gap-1">
+                <Terminal className="w-3 h-3" /> Install Dependencies
+              </p>
+              <code className="text-[13px] text-gray-600 dark:text-slate-400 font-mono leading-relaxed">
+                pip install -r requirements.txt
+              </code>
+            </div>
           </div>
 
           {/* Option 2: Clone Repo */}
@@ -91,7 +114,7 @@ export default function HomeView({ theme, onToggleTheme, onNavigate }: HomeViewP
             </h4>
             <div className="flex items-center justify-between bg-white dark:bg-slate-900 rounded-lg p-2 border border-gray-200 dark:border-slate-600">
               <code className="text-xs text-gray-800 dark:text-slate-300 truncate select-all font-mono">
-                git clone https://github.com/saket-sontakke/HPC-Simulator-and-Thermal-Aware-Workload-Scheduler.git
+                git clone https://github.com/saket-sontakke/ThermalODE-A-Physics-Informed-Simulator-for-Multi-GPU-HPC-Clusters.git
               </code>
               <button
                 onClick={handleCopyClone}
@@ -113,7 +136,7 @@ export default function HomeView({ theme, onToggleTheme, onNavigate }: HomeViewP
               <Archive className="w-4 h-4 text-blue-600 dark:text-blue-400" /> Full Project ZIP
             </h4>
             <a 
-              href="https://github.com/saket-sontakke/HPC-Simulator-and-Thermal-Aware-Workload-Scheduler/archive/refs/heads/master.zip" 
+              href="https://github.com/saket-sontakke/ThermalODE-A-Physics-Informed-Simulator-for-Multi-GPU-HPC-Clusters/archive/refs/heads/master.zip" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-sm text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1"
@@ -195,7 +218,7 @@ export default function HomeView({ theme, onToggleTheme, onNavigate }: HomeViewP
 
           <div className="w-px h-4 sm:h-5 bg-gray-300 dark:bg-slate-700 hidden sm:block shrink-0"></div>
 
-          <a href="https://github.com/saket-sontakke/Thermal-Aware-HPC-Simulator-and-Workload-Scheduler.git" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-slate-400 dark:hover:text-white transition-colors shrink-0">
+          <a href="https://github.com/saket-sontakke/ThermalODE-A-Physics-Informed-Simulator-for-Multi-GPU-HPC-Clusters.git" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-slate-400 dark:hover:text-white transition-colors shrink-0">
             <GithubIcon className="w-6 h-6 sm:w-7 sm:h-7" />
           </a>
           
